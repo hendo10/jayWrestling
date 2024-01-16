@@ -5,7 +5,7 @@ const ScraperService = require('../service/scraperService');
 const scraperService = new ScraperService();
 
 // scraping route
-router.get('/scrap', function(req, res, next) {
+router.get('/scrape', function(req, res, next) {
   try {
     scraperService.runScraper();
     res.status(200).send({ "success": "success" });
