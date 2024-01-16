@@ -192,7 +192,7 @@ const links = [
   "https://www.flowrestling.org/athletes/6aa1847d-060c-4989-aae1-473e9e088776/placements",
   "https://www.flowrestling.org/athletes/a7ce5ad4-a49f-4444-b0d2-03cdca9a9b44/placements",
   "https://www.flowrestling.org/athletes/91b71690-891e-4777-89c8-9aa78c33b0ec/placements",
-  "https://www.flowrestling.org/athletes/8732ad24-a0c7-4b2e-84c0-2879a265ca16/placements",
+  // "https://www.flowrestling.org/athletes/8732ad24-a0c7-4b2e-84c0-2879a265ca16/placements",
   "https://www.flowrestling.org/athletes/45ca7c1a-e6f8-4b84-abe8-f939c2e57d26/placements",
   "https://www.flowrestling.org/athletes/d0ee0404-e194-4375-8a63-ff24c81e9ad0/placements",
   "https://www.flowrestling.org/athletes/3da3d3ce-6edd-4bce-a50e-5810cbead539/placements",
