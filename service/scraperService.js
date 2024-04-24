@@ -10,6 +10,7 @@ class ScraperService {
       const placements = [];
       const errorUrls = []; // Array to store URLs that caused errors
       const batchSize = 20;
+      console.log("scraper starting...");
 
       for (let i = 0; i < links.length; i += batchSize) {
         const batch = links.slice(i, i + batchSize);
@@ -58,10 +59,11 @@ class ScraperService {
                   placements.push({ ...placeDetails });
                 }
               });
+
               return placeDetails;
             } catch (error) {
               // Handle the error for the specific URL
-              console.error(`Error for URL ${url}: ${error.message}`);
+              // console.error(`Error for URL ${url}: ${error.message}`);
               errorUrls.push(url);
             }
           })
@@ -85,14 +87,14 @@ class ScraperService {
         csvWriter
           .writeRecords(records)
           .then(() => {
-            console.log(`CSV file written successfully. Path: ${csvFilePath}`);
+            console.log(`CSV file written successfully generated`);
             resolve();
           })
           .catch(reject);
       });
 
-      // console.log(placements); // Log the accumulated placements
-      // console.log("Error URLs:", errorUrls); // Log the URLs that caused errors
+      console.log("Error URLs:", errorUrls); // Log the URLs that caused errors
+      console.log("scraper completed...")
       return placements;
     } catch (error) {
       console.error(`Error with scraper: ${error.message}`);
